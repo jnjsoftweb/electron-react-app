@@ -7,11 +7,14 @@ const __dirname = path.dirname(__filename);
 
 export default {
   mode: 'development',
-  entry: './src/renderer.tsx',
+  entry: {
+    renderer: './src/renderer.tsx',
+    index: './src/index.ts'
+  },
   target: "electron-renderer",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -33,6 +36,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html"
     }),
   ],
 };
