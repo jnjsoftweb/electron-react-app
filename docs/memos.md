@@ -44,3 +44,14 @@ C:\JnJ-soft\Playground\electron\my-electron-app\index.ts
 Uncaught Exception
 ReferenceError: exports is not defined in ES module scope
 This file is being treated as an ES odule because it has a '.kjs' file extension 
+
+Uncaught SyntaxError: Cannot use import statement outside a module
+index.js:1 Uncaught SyntaxError: Cannot use import statement outside a module
+node:electron/js2c/renderer_init:2 Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.

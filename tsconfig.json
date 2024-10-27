@@ -3,20 +3,13 @@
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "allowJs": true
+    "jsx": "react"
   },
   "include": [
     "src/**/*"
-  ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  ]
 }

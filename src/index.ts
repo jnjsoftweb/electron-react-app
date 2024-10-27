@@ -11,11 +11,13 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
+      webSecurity: false // 개발 중에만 사용하세요
     }
   });
 
   win.loadFile(path.join(__dirname, 'index.html'));
+  win.webContents.openDevTools();
 };
 
 app.whenReady().then(createWindow);

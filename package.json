@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
-    "build": "rimraf dist && webpack --config webpack.config.js && tsc",
+    "build": "webpack --config webpack.config.js",
     "electron": "electron --experimental-modules ."
   },
   "keywords": [],
